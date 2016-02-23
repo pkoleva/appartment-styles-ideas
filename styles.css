@@ -1,0 +1,16 @@
+.container{
+	width:80%;
+	max-width: 1000px;
+	min-width:620px;
+	margin:10px auto;
+}
+.rectangle{
+	width:100px;
+	height:100px;
+	display: inline-block;
+	margin: 10px;
+}
+
+.laminat{
+	background-image: 
+}
