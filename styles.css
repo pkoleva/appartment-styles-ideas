@@ -11,6 +11,11 @@
 	margin: 10px;
 }
 
-.laminat{
-	background-image: 
+h3{
+	color:#fff;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 15px Arial;
+	background-color: rgba(0,0,0,0.5);
 }
