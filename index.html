@@ -1,12 +1,19 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <title>Color combinations</title>
 <head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<div class="container" style="background-image:url(images/laminat1.jpg);">
-		<h3>Sherlock</h3>
+		<div class="voting">
+			<h3>Sherlock</h3>
+			<button onclick="showDialog.call(this,event)">Rate</button>
+			<span id="rating1">5/5</span>
+		</div>
+		
 		<div class="rectangle" style="background-color:#25567b;"></div>
 		<div class="rectangle" style="background-color:#FF6700;"></div>
 		<div class="rectangle" style="background-color:#A64300;"></div>
@@ -18,7 +25,12 @@
 	</div>
 
 	<div class="container" style="background-image:url(images/laminat2.jpg);">
-		<h3>Fjord</h3>
+		<div class="voting">
+			<h3>Fjord</h3>
+			<button onclick="showDialog.call(this,event)">Rate</button>
+			<span id="rating2">5/5</span>
+		</div>
+		
 		<div class="rectangle" style="background-color:#25567b;"></div>
 		<div class="rectangle" style="background-color:#947662;"></div>
 		<div class="rectangle" style="background-color:#F5A36B;"></div>
@@ -30,7 +42,12 @@
 	</div>
 
 	<div class="container" style="background-image:url(images/laminat3.jpg);">
-		<h3>Yacht</h3>
+		<div class="voting">
+			<h3>Yacht</h3>
+			<button onclick="showDialog.call(this,event)">Rate</button>
+			<span id="rating3">5/5</span>
+		</div>
+		
 		<div class="rectangle" style="background-color:#25567b;"></div>
 		<div class="rectangle" style="background-color:#749DBD;"></div>
 		<div class="rectangle" style="background-color:#999;"></div>
@@ -42,7 +59,11 @@
 	</div>
 
 	<div class="container" style="background-image:url(images/laminat4.jpg);">
-		<h3>Glacier</h3>
+		<div class="voting">
+			<h3>Glacier</h3>
+			<button onclick="showDialog.call(this,event)">Rate</button>
+			<span id="rating4">5/5</span>
+		</div>
 		<div class="rectangle" style="background-color:#25567b;"></div>
 		<div class="rectangle" style="background-color:#999;"></div>
 		<div class="rectangle" style="background-color:#fff;"></div>
@@ -55,7 +76,11 @@
 	</div>
 
 	<div class="container" style="background-image:url(images/laminat5.jpg);">
-		<h3>Dock</h3>
+		<div class="voting">
+			<h3>Dock</h3>
+			<button onclick="showDialog.call(this,event)">Rate</button>
+			<span id="rating5">5/5</span>
+		</div>
 		<div class="rectangle" style="background-color:#25567b;"></div>
 		<div class="rectangle" style="background-color:#573915;"></div>
 		<div class="rectangle" style="background-color:#C2A98A;"></div>
@@ -65,5 +90,17 @@
 		<div class="rectangle" style="background-image:url(images/acssesoir5.jpg);background-size:contain;"></div>
 		<div class="rectangle" style="background-image:url(images/acssesoir5-1.jpg);background-size:contain;"></div>
 	</div>
+	<div id="popUpHolder">
+		<div id="ratingPopUp">
+			<p>Select Rating</p>
+			<input type="radio" name="rating" value="1"> 1</input>
+			<input type="radio" name="rating" value="2"> 2</input>
+			<input type="radio" name="rating" value="3"> 3</input>
+			<input type="radio" name="rating" value="4"> 4</input>
+			<input type="radio" name="rating" value="5"> 5</input>
+			<button onclick="rate.call(this,event)">Rate</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
 </body>
 </html> 

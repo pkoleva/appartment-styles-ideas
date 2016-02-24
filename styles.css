@@ -1,3 +1,4 @@
+
 .container{
 	width:80%;
 	max-width: 1000px;
@@ -11,11 +12,70 @@
 	margin: 10px;
 }
 
+.voting{
+	background-color: rgba(0,0,0,0.5);
+	display: block;
+	margin: 0;
+	height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 h3{
 	color:#fff;
 	padding-left: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-family: 15px Arial;
-	background-color: rgba(0,0,0,0.5);
+	font: 15px Arial;
+	display: inline-block;
+	margin: 0;
+}
+
+button{
+	background-color: #333;
+	color:#fff;
+	border: none;
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin-right: 10px;
+
+}
+
+.voting>span{
+	color:#fff;
+	padding-left: 10px;
+	font: 15px Arial;
+}
+
+#popUpHolder{
+	visibility: hidden;
+	background-color: rgba(255,255,255,0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 100;
+
+}
+
+#ratingPopUp{
+	background-color: #fff;
+	width: 250px;
+	height: 150px;
+	margin: 300px auto;
+	font: 15px Arial;
+}
+
+#ratingPopUp>input{
+	background-color: #333;
+	color: #fff;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+#ratingPopUp>p{
+	padding-left: 10px;
+	font: 15px Arial;
+
 }
